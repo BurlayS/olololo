@@ -38,19 +38,7 @@ $(document).ready(function() {
         })
     };
     //--------------information window function for "click" event---
-    function PopUp_Info(i) {
-        console.log(i);
-        $('<div id="window-popup"><div id="window-content"></div></div>').appendTo('body');
-        $('<div id = "close"><img src="IMG/close-button.gif"></div>').appendTo('#window-content');
-
-        $('<div class = "text"><img id = "pic" src=' + data[i].image + '></div>').appendTo('#window-content');
-        $('<div class = "text"><b>' + data[i].name + '</b></div>').appendTo('#window-content');
-        $('<hr>').appendTo('#window-content');
-        $('<div id = "description">' + data[i].desc + '</div>').appendTo('#window-content');
-        $('#close').click(function() {
-            $('#window-popup').remove();
-        });
-    };
+   
     //--------------write off function for "click" event----- ------        
     function PopUp_WriteOff(i) {
         $('form').remove();
